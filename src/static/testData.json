@@ -1,0 +1,30 @@
+{
+  "data": {
+      "components": {
+        "spot": {
+          "cx": 50,
+          "cy": 50,
+          "r": 40,
+          "stroke": "blue",
+          "fill": "lightblue"
+        },
+        "line": {
+          "spot1": {
+            "cx": 50,
+            "cy": 50,
+            "r": 40,
+            "stroke": "blue",
+            "fill": "lightblue"
+          },
+          "spot2": {
+            "cx": 50,
+            "cy": 50,
+            "r": 40,
+            "stroke": "blue",
+            "fill": "lightblue"
+          },
+          "stroke": "black"
+        }
+      }
+    }
+}
