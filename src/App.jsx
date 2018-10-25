@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <h2>Test SVG components</h2>
-        <SVGContainer width="500px" height="500px" content={testData}/>
+        <SVGContainer width="500px" height="500px" content={testData.data.components}/>
       </div>
     );
   }

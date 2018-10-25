@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import Segment from '../components/Segment';
+import ControlSpot from './../components/ControlSpot'
 
 class SVGContainer extends React.Component {
 
@@ -8,17 +10,12 @@ class SVGContainer extends React.Component {
   }
 
   render() {
-    const components = this.props.content.data.components;
+    const components = this.props.content;
     console.log('components: ', components);
     return (
       <svg width={this.props.width} height={this.props.height} xmlns="http://www.w3.org/2000/svg">
-        <circle
-          cx="50"
-          cy="50"
-          r="40"
-          stroke="blue"
-          fill="lightblue"
-        />
+        <ControlSpot {...this.props.content.spot} />
+        <Segment {...this.props.content.segment}/>
       </svg>
     );
   }
