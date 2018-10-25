@@ -4,26 +4,17 @@
         "spot": {
           "cx": 50,
           "cy": 50,
-          "r": 40,
+          "r": 6,
           "stroke": "blue",
           "fill": "lightblue"
         },
-        "line": {
-          "spot1": {
-            "cx": 50,
-            "cy": 50,
-            "r": 40,
-            "stroke": "blue",
-            "fill": "lightblue"
-          },
-          "spot2": {
-            "cx": 50,
-            "cy": 50,
-            "r": 40,
-            "stroke": "blue",
-            "fill": "lightblue"
-          },
-          "stroke": "black"
+        "segment": {
+          "x1": "6",
+          "y1": "6",
+          "x2": "400",
+          "y2": "200",
+          "stroke": "#FF5555",
+          "strokeWidth": 1
         }
       }
     }
