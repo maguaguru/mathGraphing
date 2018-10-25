@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import Segment from '../components/Segment';
-import ControlSpot from './../components/ControlSpot'
+import Spot from './../components/Spot'
 
 class SVGContainer extends React.Component {
 
@@ -14,7 +13,7 @@ class SVGContainer extends React.Component {
     console.log('components: ', components);
     return (
       <svg width={this.props.width} height={this.props.height} xmlns="http://www.w3.org/2000/svg">
-        <ControlSpot {...this.props.content.spot} />
+        <Spot {...this.props.content.spot} />
         <Segment {...this.props.content.segment}/>
       </svg>
     );

@@ -4,7 +4,8 @@ class ControlSpot extends React.Component {
   constructor(props) {
     super(props);
     this.onMouseDownHandler =  this.onMouseDownHandler.bind(this)
-    this.onMouseUpHandler =  this.onMouseUpHandler.bind(this)
+    this.onMouseUpHandler =  this.onMouseUpHandler.bind(this);
+    this.onMouseMoveHandler = this.onMouseMoveHandler.bind(this)
   }
 
   onMouseDownHandler(e){
@@ -14,6 +15,10 @@ class ControlSpot extends React.Component {
 
   onMouseUpHandler(e){
     console.log('target: ', e.target)
+  }
+
+  onMouseMoveHandler(){
+
   }
 
   render() {
@@ -28,7 +33,8 @@ class ControlSpot extends React.Component {
         strokeWidth={strokeWidth}
         fill={fill}
         onMouseDown={this.onMouseDownHandler}
-        onMouseUp={this.onMouseUpHandler}/>
+        onMouseUp={this.onMouseUpHandler}
+        onMouseMove={this.onMouseMoveHandler}/>
     );
   }
 }
@@ -36,7 +42,8 @@ class ControlSpot extends React.Component {
 ControlSpot.defaultProps = {
   r: 6,
   fill: 'red',
-  stroke: 'black'
+  stroke: 'black',
+  strokeWidth: 1
 };
 
 export default ControlSpot;
