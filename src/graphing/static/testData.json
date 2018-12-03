@@ -1,0 +1,38 @@
+{
+  "data": {
+    "grid": {
+      "xMin": -10,
+      "yMin": -10,
+      "xMax": 10,
+      "yMax": 10,
+      "xSegment": 1,
+      "ySegment": 1,
+      "xAxisName": "t",
+      "yAxisName": "",
+      "xTiks": "1,2,3,4,5,6,7,8,9",
+      "yTiks": "1,2,3,4,5,6,7,8,9",
+      "showGrid": true,
+      "showAxis": false,
+      "xAxisOrigin": 0,
+      "yAxisOrigin": 0,
+      "axisPosition": "leftBottom"
+    },
+    "components": {
+      "spot": {
+        "cx": 50,
+        "cy": 50,
+        "r": 6,
+        "stroke": "blue",
+        "fill": "lightblue"
+      },
+      "segment": {
+        "x1": "6",
+        "y1": "6",
+        "x2": "400",
+        "y2": "200",
+        "stroke": "#FF5555",
+        "strokeWidth": 1
+      }
+    }
+  }
+}
