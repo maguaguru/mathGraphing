@@ -17,7 +17,6 @@ const store = createStore(mainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && wi
     }
 }));
 
-console.log('store.getState(): ', store.getState())
 
 ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

@@ -17,7 +17,8 @@ class ControlSpot extends React.Component {
     console.log('target: ', e.target)
   }
 
-  onMouseMoveHandler(){
+  onMouseMoveHandler(e){
+      console.log('onMouseMoveHandler: e.clientX: ', e.clientX)
 
   }
 
